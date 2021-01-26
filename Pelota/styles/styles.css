@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+   position: absolute;
+   background: black;
+   height: 600px;
+   width:100vw;
+}
+.pelota{
+    position: absolute;
+    background: rgb(190, 183, 252);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 0;
+    
+    animation-name:botar;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear /*cubic-bezier(.18,.58,.26,.96)*/;
+}
+
+@keyframes botar{
+    0%  {transform: translateY(0) translateX(0);
+    }
+    25% {transform: translateY(500px) translateX(300px);
+        
+    }
+    30%{
+        width: 120px;
+    }
+    50% {transform: translateY(-1px) translateX(600px);
+        width: 100px;
+    }
+    73%{
+        width: 120px;
+    }
+    75% {transform: translateY(500px) translateX(900px); 
+        
+    }
+    100%{transform: translateY(-1%) translateX(1450px);
+    width: 120px;};
+   
+}
+
