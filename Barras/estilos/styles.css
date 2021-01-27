@@ -27,7 +27,7 @@
 }
 p{
     position: absolute;
-    z-index: 1;
+    
 }
 /*colores de las cajas*/
 .primera{
@@ -44,15 +44,15 @@ p{
    background: #F8BB44;
 }
 .quinta{
-    background: #F24B4B;;
+    background: #F24B4B;
 }
 /*icono en las letras*/
 .corazon::after {
 	content: '\2665';
 	color: #fff;
     font-size: 54px;
-    position: absolute;
-    z-index: 1;
+    margin-left: 110px;
+    
 }
 
 /*inicio de las animaciones*/
@@ -68,7 +68,6 @@ p{
     transform: skewX(33deg);
     opacity: 0.08;
     transform-origin: center;
-    z-index: 2;
     transition-duration: 1s;
 }
 
