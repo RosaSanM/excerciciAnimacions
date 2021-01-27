@@ -11,6 +11,7 @@
     width: 100vw;
     height: 100vh;
     
+    
 }
 /*estilos comunes para las cajas*/
 .caja{
@@ -24,6 +25,7 @@
     overflow: hidden;
     cursor: pointer;
     
+    
 }
 p{
     position: absolute;
@@ -32,19 +34,35 @@ p{
 /*colores de las cajas*/
 .primera{
     background:#244F75;
+    animation-name: primera;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+        
 }
 .segunda{
     background:#60BFBF;
+    animation-name: segunda;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     
 }
 .tercera{
    background: #8C4B7E;
+   animation-name: tercera;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 .cuarta{
    background: #F8BB44;
+   animation-name: cuarta;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 .quinta{
     background: #F24B4B;
+    animation-name: quinta;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 /*icono en las letras*/
 .corazon::after {
@@ -73,4 +91,47 @@ p{
 
 .caja:hover::before{
     transform: scale(3);
+    
+}
+
+
+@keyframes primera{
+    0%{
+        transform: translateY(-500%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes segunda{
+    0%{
+        transform: translateY(500%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes tercera{
+    0%{
+        transform: translateY(-500%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes cuarta{
+    0%{
+        transform: translateY(500%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes quinta{
+    0%{
+        transform: translateX(300%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
